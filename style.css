@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 5px;
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+    min-height: 100%;
+    background-image: url('./city.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    height:  90px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 0%;
+    padding: 0%;
+}
+.logo:hover{
+    box-shadow: -1px 1px 7px 0px rgba(165, 42, 42, 0.75);
+}
+.logo2{
+    width: 90px;
+    border-radius: 20px;
+}
+.logo2:hover{
+    box-shadow: -1px 1px 7px 0px rgba(165, 42, 42, 0.75);
+}
+.grid-container > *{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "main"
+    "sidebar"
+    "footer";
+}
+h1{
+    color: purple;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px white;
+}
+.header {
+    grid-area: header;
+    background-color: rgba(135, 207, 235, 0.384);
+    background-size: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 130px;
+}
+.uno{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    max-width: 130px;
+    padding-top: 10px;
+}
+.uno:hover{
+    box-shadow: -1px 1px 7px 0px rgba(255, 255, 255, 0.75);
+}
+.dos{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    max-width: 130px;
+    padding-top: 10px;
+}
+.dos:hover{
+    box-shadow: -1px 1px 7px 0px rgba(255, 255, 255, 0.75);
+}
+.tres{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    max-width: 130px;
+    padding-top: 10px;
+}
+.tres:hover{
+    box-shadow: -1px 1px 7px 0px rgba(255, 255, 255, 0.75);
+}
+.cuatro{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    max-width: 130px;
+    padding-top: 10px;
+}
+.cuatro:hover{
+    box-shadow: -1px 1px 7px 0px rgba(255, 255, 255, 0.75);
+}
+.navbar {
+    grid-area: navbar;
+    background-size: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 10px;
+    background-color: rgba(128, 0, 128, 0.322);
+}
+.navbar a{
+    color: skyblue;
+}
+.loren{
+    width: 100px ;
+    height: 100px ;
+    
+}
+.imgnav{
+    width: 50px;
+    border-radius: 20px;
+}
+.logo3{
+    width: 400px;
+}
+.sidebar {
+    grid-area: sidebar;
+    text-align: justify;
+    color: purple;
+    background-image: url('./acceso1.jpg');
+    background-position: left;
+    background-size: 400px;
+}
+.main {
+    grid-area: main;
+    background-image: url('');
+    background-size: cover;
+    background-position-x: left;
+}
+.imgmain{
+    height: 120px;
+    border-radius: 20px;
+}
+.imgmain:hover{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+}
+.fotart{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+}
+.fotart2{
+    background-image: url('./vestido\ rojo.jpeg');
+}
+.inv{
+    color: rgba(250, 235, 215, 0);
+}
+.footer {
+    grid-area: footer;
+    background-color: rgba(128, 0, 128, 0.233);
+    height: 90px;
+}
+@media (min-width:600px){
+    .grid-container{
+        grid-gap: 20px;
+        grid-template: 
+        "header  header" 130px
+        "navbar  navbar" auto
+        "sidebar main"   auto 
+        "footer  footer" 90px/
+        150px    auto;
+    }
+}
+@media (min-width:900px){
+    .grid-container{
+        grid-template: 
+        "header  header header"  130px
+        "navbar  main   sidebar" auto
+        "footer  footer footer"  90px/
+        150px    auto    200px;
+    }
+    .navbar {
+        grid-area: navbar;
+        grid-template: 
+        "uno"       100px
+        "dos"       100px
+        "tres"      100px
+        "cuatro"    100px;
+        grid-row-gap: 20px;
+    }
+}
+.estilo{
+    width: 100px ;
+    height: 100px ;
+
+}
+
